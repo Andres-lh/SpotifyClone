@@ -11,7 +11,7 @@ const scope = [
     "user-modify-playback-state",
 ]
 
-export const getToken = () => {
+export const getHashFromUrl = () => {
     return window.location.hash
         .substring(1)
         .split('&')
