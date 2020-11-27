@@ -11,7 +11,19 @@
 .sidebar-logo{
     margin-right: auto;
     object-fit: contain;
-    height: 80px;
+    height: 60px;
     padding:10px ;
     
+}
+
+.sidebar-title{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.sidebar > hr{
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
 }
