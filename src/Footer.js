@@ -15,14 +15,19 @@ function Footer(){
     return(
         <div className="footer">
             <div className="footer-left">
-                <h1>Bla1</h1>
+                <img className="footer-album-logo"
+                src="https://yt3.ggpht.com/ytc/AAUvwnjheQ_52iOyoeS1wXVZKlO1BZBPL_kUUjJH9iOtNQ=s900-c-k-c0x00ffffff-no-rj" alt=""/>
+                <div className="footer-songinfo">
+                    <h4>Song</h4>
+                    <p>Radiohead</p>
+                </div>
             </div>
             <div className="footer-center">
-                <ShuffleIcon className="footer-shuffle" />
-                <SkipPreviousIcon className="footer-previous" />
-                <PlayCircleOutlineIcon className="footer-play" fontSize="Large"/>
-                <SkipNextIcon className="footer-next" />
-                <RepeatIcon className="footer-repeat" />
+                <ShuffleIcon className="footer-icon" />
+                <SkipPreviousIcon className="footer-icon" />
+                <PlayCircleOutlineIcon className="footer-icon" fontSize="Large"/>
+                <SkipNextIcon className="footer-icon" />
+                <RepeatIcon className="footer-icon"/>
             </div>
 
             <div className="footer-right">
