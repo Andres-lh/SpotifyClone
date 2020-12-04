@@ -19,7 +19,7 @@ function Sidebar(){
             <SidebarOption Icon={LibraryMusicIcon} title="Your Library"/>
 
             <br/>
-            <strong className="sidebar-title">PLAYLISTS</strong>
+            <p className="sidebar-title">PLAYLISTS</p>
             <hr />
 
             {playlists?.items?.map(playlist=>(
