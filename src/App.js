@@ -35,16 +35,23 @@ function App() {
 
       spotify.getUserPlaylists().then((playlists) =>{
         dispatch({
-          type: "SET_PLAYLIST", 
+          type: "SET_PLAYLISTS", 
           playlists: playlists
         })
       })
+
+      spotify.getPlaylist('').then(res =>{
+        dispatch({
+          type: "SET_PLAYLIST_TRACKS",
+          playlist_tracks: res,
+
+        })
+      })
+
     }
 
   }, [] );
 
-  console.log('user: ', user);
-  console.log('token: ', token);
   
   return (
     <div className="app">

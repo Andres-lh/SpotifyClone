@@ -1,6 +1,32 @@
 .body{
     padding: 10px;
     flex: 0.98px;
+    height: 100vh;
     color: white;
     background-color: #121212;
+}
+
+.body-info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body-info > img {
+    height: 15vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body-infotext{
+    flex: 1;
+}
+
+.body-infotext > p{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.body-infotext > p{
+    font-size: 14px;
 }
