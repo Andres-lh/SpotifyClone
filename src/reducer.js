@@ -3,7 +3,7 @@ export const initialState={
     playlists: [],
     playing: false,
     item: null,
-    token: "",
+    token: null,
 
 }
 
@@ -25,11 +25,6 @@ const reducer = (state, action) =>{
             return{
                 ...state,
                 playlists: action.playlists
-            };
-        case "SET_RECOMENDATIONS":
-            return{
-                ...state,
-                recomendations: action.recomendations
             };
         
         case 'SET_CURRENT_PLAYLIST': {
@@ -55,7 +50,14 @@ const reducer = (state, action) =>{
                 ...state,
                 track: action.track
             };
-        }  
+        }
+        case 'SET_START': {
+            return {
+                ...state,
+                recently: action.recently
+            };
+        } 
+
 
         default:
             return state;

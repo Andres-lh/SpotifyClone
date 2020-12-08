@@ -12,7 +12,7 @@ const spotify = new SpotifyWebApi();
 function App() {
   
  
-  const [{user, token}, dispatch] = useDataLayerValue();
+  const [{user, token, recommendations}, dispatch] = useDataLayerValue();
 
   useEffect( () =>{
     const hash = getHashFromUrl();
@@ -40,7 +40,7 @@ function App() {
         })
       })
 
-      spotify.getPlaylist('').then(res =>{
+      spotify.getPlaylist('37i9dQZF1DWVYJEcbief4b').then(res =>{
         dispatch({
           type: "SET_PLAYLIST_TRACKS",
           playlist_tracks: res,
@@ -48,6 +48,12 @@ function App() {
         })
       })
 
+      spotify.getMyRecentlyPlayedTracks().then(res =>{
+        dispatch({
+          type: "SET_START",
+          recently: res,
+        })
+      })
     }
 
   }, [] );
