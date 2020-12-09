@@ -1,9 +1,10 @@
 .song-row{
     margin-left: 20px;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    color: white;
+    display: fleX;
+    
+    color:white;
+    
 }
 
 .song-row:hover{
@@ -12,21 +13,21 @@
     opacity: 0.8;
 }
 
-.song-row-info{
-    margin-left: 20px;
+.song-row > div{
+    
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+
 }
 
-.song-row-info > h1{
-    font-size: 16px;
+.song-row > div > h1{
+    font-size: 10px;
 }
 
-.song-row-info > p{
-    font-size: 14px;
-    margin-top: 3px;
-    color: gray;
-}
 
 .song-row-album{
+    padding: 10px;
     height: 40px;
     width: 40px;
 }

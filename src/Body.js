@@ -20,7 +20,7 @@ function Body({spotify}){
                 <img src={playlist_tracks?.images[0].url} alt="playlist"/>
                 <div className="body-infotext">
                     <p>PLAYLIST</p>
-                    <h1>Name</h1>
+                    <h1>{playlist_tracks?.name}</h1>
                     <p>{playlist_tracks?.description}</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ function Body({spotify}){
                 </div>
 
                 {playlist_tracks?.tracks.items.map((item) => (
-                    <SongRow track={item.track} />
+                    <SongRow track={item.track} added={item.added_at}/>
                 ))}
             </div>
 
