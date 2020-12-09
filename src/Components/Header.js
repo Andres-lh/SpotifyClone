@@ -1,8 +1,8 @@
 import React from 'react';
-import './Header.css' ;
+import './Styles/Header.css' ;
 import SearchICon from "@material-ui/icons/Search";
 import {Avatar} from "@material-ui/core"
-import { useDataLayerValue } from './DataLayer';
+import { useDataLayerValue } from '../Data/DataLayer';
 
 function Header() {
 

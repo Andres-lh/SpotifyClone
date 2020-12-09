@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { DataLayer } from './DataLayer'
-import reducer, { initialState } from './reducer'
+import App from './Components/App';
+import { DataLayer } from './Data/DataLayer'
+import reducer, { initialState } from './Data/reducer'
 import reportWebVitals from './reportWebVitals';
 
 

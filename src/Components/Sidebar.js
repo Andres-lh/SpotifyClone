@@ -1,10 +1,10 @@
 import React from 'react';
-import './Sidebar.css';
+import './Styles/Sidebar.css';
 import SidebarOption from './SidebarOption';
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
-import { useDataLayerValue } from './DataLayer';
+import { useDataLayerValue } from '../Data/DataLayer';
 
 function Sidebar(){
 

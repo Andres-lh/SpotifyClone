@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
-import './Body.css';
-import { useDataLayerValue } from './DataLayer';
+import './Styles/Body.css';
+import { useDataLayerValue } from '../Data/DataLayer';
 import SongRow from './SongRow';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import FavoriteIcone from '@material-ui/icons/Favorite';

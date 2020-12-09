@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './Styles/App.css';
 import Login from  './Login'
 import Player from './Player';
-import { getHashFromUrl } from './spotify';
-import { useDataLayerValue } from './DataLayer';
+import { getHashFromUrl } from '../Data/spotify';
+import { useDataLayerValue } from '../Data/DataLayer';
 import SpotifyWebApi from 'spotify-web-api-js';
 
 
