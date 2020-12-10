@@ -8,19 +8,21 @@
 
 .sidebar-logo{
     max-width: 150px;
-    padding: 0.8rem 0.8rem 0.3rem 0.8rem ;
+    padding: 0.8rem 0.8rem 0.4rem 0.9rem ;
 }
 
 .sidebar-title{
     font-size: 13px;
-    margin-left: 10px;
-    padding: 10px;
+    margin-left: 23px;
     font-weight: 650;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.07em;
+    padding-bottom: 10px;
 }
 
 .sidebar > hr{
     border: 1px solid #282828;
     width: 90%;
     margin: 10px auto;
+    
 }
+

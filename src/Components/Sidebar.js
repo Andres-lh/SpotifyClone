@@ -23,10 +23,13 @@ function Sidebar(){
             <p className="sidebar-title">PLAYLISTS</p>
             <hr />
 
+           
             {playlists?.items?.map(playlist=>(
                 <SidebarOption  title={playlist.name}/>
-                
+            
             ))}
+            
+            
 
         </div>
         

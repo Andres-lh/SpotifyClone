@@ -1,9 +1,14 @@
-/*footer{
+.footer{
+    height: 100vh;
     display: flex;
+    bottom: 0;
     background: #282828;
     text-align: center;
-    height: 85px;
     align-items: center;
     justify-content: center;
-    color:
-}*/
+    color: white;
+}
+
+.footer-album-logo{
+    height: 20px;
+}
