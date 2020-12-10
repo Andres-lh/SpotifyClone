@@ -1,32 +1,22 @@
 .sidebar{
-    flex: 0.1;
     height: 100vh;
+    width: 230px;
+    background: #040404;
     color: #b3b3b3;
-    padding-left: 15px;
-    padding-right: 10px;
     min-width: 230px;
-    background-color: #040404;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-   
 }
 
 .sidebar-logo{
-    height: 63px;
-    display: flex;
-    justify-content: center;
-    padding-top: 0.8rem;
-    padding-bottom: 0.7rem;
+    max-width: 150px;
+    padding: 0.8rem 0.8rem 0.3rem 0.8rem ;
 }
 
 .sidebar-title{
-    margin-left: 10px;
-    padding: 5px;
     font-size: 13px;
-    font-family:sans-serif, Helvetica, Arial;
-    font-weight: 600;
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: 650;
     letter-spacing: 0.03em;
-    
 }
 
 .sidebar > hr{

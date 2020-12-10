@@ -1,10 +1,9 @@
 .sidebar-option{
     display: flex;
     align-items: center;
-    color: gray;
     height: 40px;
     cursor: pointer;
-    transition: 250 ms color ease-in;
+    transition: 200ms color ease-in;
 }
 
 .sidebar-option:hover{
@@ -12,7 +11,7 @@
 }
 
 .sidebar-option-icon{
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
 }
 
@@ -20,4 +19,5 @@
     margin-top: 10px;
     margin-left: 20px;
     font-size: 14px;
+    font-weight: 580;
 }
