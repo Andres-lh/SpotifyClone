@@ -1,0 +1,99 @@
+.body{
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    overflow-y: overlay;
+    background-color: #121212;
+    background: linear-gradient(0deg, rgba(18,18,18,1) 65%, rgba(70,69,69,1) 100%);
+
+}
+
+.body::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+   
+
+.body::-webkit-scrollbar-thumb {
+    background-color: rgb(116, 113, 113);
+    outline: 1px solid slategrey;
+  }
+  
+.body::-webkit-scrollbar-thumb:hover {
+    background: rgb(165, 162, 162);
+  }
+
+.body-info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body-info > img {
+    height: 15vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body-infotext{
+    flex: 1;
+}
+
+.body-infotext > p{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.body-infotext > p{
+    font-size: 14px;
+}
+
+.songs-view{
+    margin-left: 20px;
+    margin-bottom: 200px;
+}
+
+.body-icons{
+    display: flex;
+    align-items: center;
+}
+
+.body-icons > .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+.body-play{
+    font-size: 70px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.body-play:hover{
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+
+.songs-view-header{
+    font-size: 13px;
+    color: #b3b3b3;
+    display: flex;
+    letter-spacing: 0.1rem;
+}
+
+.songs-view-title{
+    width: 33rem;
+    margin-left: 1rem;
+}
+.songs-view-album{
+   width: 23rem;
+}
+.songs-view-time{
+    margin-left: auto;
+    margin-right: 7rem;
+}
+
+.songs-view > hr{
+    border: 0.9px solid #363434;
+    width: 98%;
+    margin: 10px auto;
+}

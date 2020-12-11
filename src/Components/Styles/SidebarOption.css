@@ -21,8 +21,8 @@
     font-weight: 650; 
     font-size: 14px;
     transition: 300ms color ease-in;
+    
 }
-
 
 .sidebar-option > p{
     margin-top: 10px;
@@ -34,5 +34,5 @@
     text-overflow: ellipsis;
     width: 170px;
     display: block;
-    overflow: hidden
+    overflow: hidden;
 }

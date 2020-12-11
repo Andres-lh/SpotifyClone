@@ -40,7 +40,7 @@ function App() {
         })
       })
 
-      spotify.getPlaylist('37i9dQZF1DWVYJEcbief4b').then(res =>{
+      spotify.getPlaylist('37i9dQZF1DX1XDyq5cTk95').then(res =>{
         dispatch({
           type: "SET_PLAYLIST_TRACKS",
           playlist_tracks: res,

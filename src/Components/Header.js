@@ -2,6 +2,7 @@ import React from 'react';
 import './Styles/Header.css' ;
 import SearchICon from "@material-ui/icons/Search";
 import {Avatar} from "@material-ui/core"
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { useDataLayerValue } from '../Data/DataLayer';
 
 function Header() {

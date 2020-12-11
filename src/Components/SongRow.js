@@ -12,24 +12,21 @@ function SongRow({track, added}) {
     return (
         
         <div className="song-row"> 
-            <div>
-                <img className="song-row-album" src={track.album.images[0].url} alt=""/>
+            <div className="song-row-left">
+                <img className="song-row-image" src={track.album.images[0].url} alt=""/>
                 <div>
-                    <h1>{track.name}</h1>
+                    <h4 className="track-name">{track.name}</h4>
                     <p>
                         {track.artists.map((artist)=> artist.name).join(", ")}
                     </p>
                 </div>   
             </div>
            
-            <div>
+            <div className="song-row-album">
                 <p>{track.album.name}</p>
                 
             </div>
-            <div>
-                <p>{added}</p>
-            </div>
-            <div>
+            <div className="song-time">
                 <p>{fixDuration(track.duration_ms)}</p>
             </div>
         </div>

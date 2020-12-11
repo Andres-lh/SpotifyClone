@@ -25,16 +25,28 @@ function Body({spotify}){
                 </div>
             </div>
 
-            <div className="songs-view">
-                <div className="body-icons">
+            <div className="body-icons">
                     <PlayCircleFilledIcon className="body-play"/>
                     <FavoriteIcone/>
                     <MoreHorizIcon/>
+            </div>
 
-                </div>
 
+            <div className="songs-view">
+               <div className="songs-view-header">
+                   <div  className="songs-view-title">
+                        <span>TITLE</span>
+                   </div>
+                   <div  className="songs-view-album">
+                        <span>ALBUM</span>
+                   </div>
+                   <div  className="songs-view-time">
+                        <span>TIME</span>
+                   </div>
+               </div>
+               <hr/>
                 {playlist_tracks?.tracks.items.map((item) => (
-                    <SongRow track={item.track} added={item.added_at}/>
+                    <SongRow track={item.track} />
                 ))}
             </div>
 
