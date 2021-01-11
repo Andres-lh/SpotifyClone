@@ -12,5 +12,6 @@ The app uses the Spotify API wich allows you to log in with your spotify account
 - React Context API
 - Spotify API
 - Material UI
-![](https://github.com/Andres-lh/SpotifyClone/blob/main/ScreenShot/spotify.PNG?raw=true)
 
+## ScreenShot
+![](https://github.com/Andres-lh/SpotifyClone/blob/main/ScreenShot/spotify.PNG?raw=true)
