@@ -27,18 +27,6 @@ const reducer = (state, action) =>{
                 playlists: action.playlists
             };
         
-        case 'SET_CURRENT_PLAYLIST': {
-            let currentPlaylist = null;
-            state.playlists.items.forEach(playlist => {
-                if(playlist.id === action.id) {
-                    currentPlaylist = playlist;
-                }
-            });
-            return {
-                ...state,
-                current_playlist: currentPlaylist
-            }
-        }
         case 'SET_PLAYLIST_TRACKS': {
             return {
                 ...state,
@@ -57,7 +45,12 @@ const reducer = (state, action) =>{
                 recently: action.recently
             };
         } 
-
+        case 'SET_TRACKS': {
+            return {
+                ...state,
+                tracks: action.tracks
+            };
+        }
 
         default:
             return state;

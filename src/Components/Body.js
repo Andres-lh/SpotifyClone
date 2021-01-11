@@ -10,18 +10,17 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 function Body({spotify}){
 
-    const [{playlist_tracks, recently}, dispatch] = useDataLayerValue(); 
-
+    const [{recently}, dispatch] = useDataLayerValue(); 
+    console.log(recently)
     return(
         <div className="body">
             <Header spotify={spotify}/>
 
             <div className="body-info">
-                <img src={playlist_tracks?.images[0].url} alt="playlist"/>
                 <div className="body-infotext">
                     <p>PLAYLIST</p>
-                    <h1>{playlist_tracks?.name}</h1>
-                    <p>{playlist_tracks?.description}</p>
+                    <h1>{recently?.name}</h1>
+                    <p>{recently?.description}</p>
                 </div>
             </div>
 
@@ -30,8 +29,6 @@ function Body({spotify}){
                     <FavoriteIcone/>
                     <MoreHorizIcon/>
             </div>
-
-
             <div className="songs-view">
                <div className="songs-view-header">
                    <div  className="songs-view-title">
@@ -45,14 +42,12 @@ function Body({spotify}){
                    </div>
                </div>
                <hr/>
-                {playlist_tracks?.tracks.items.map((item) => (
+                {recently?.items.map((item) => (
                     <SongRow track={item.track} />
                 ))}
             </div>
 
         </div>
-
-        
         
     )
 }

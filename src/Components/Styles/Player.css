@@ -4,11 +4,11 @@
     background: #141414;   
 }
 
-
-
 .player-body{ 
     display: flex;
     background-color: #121212;
     height: calc(100vh - 90px);
+    
 }
+
 
